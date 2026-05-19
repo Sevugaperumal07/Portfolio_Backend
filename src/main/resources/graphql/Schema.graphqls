@@ -1,0 +1,17 @@
+type Query {
+    getAllUsers: [UserResponse!]!
+    getUserById(id: ID!): UserResponse
+}
+
+type UserResponse {
+    id: ID!
+    name: String
+    role: String
+    email: String
+    location: String
+    bio: String
+    githubUrl: String
+    linkedinUrl: String
+    createdAt: String
+    updatedAt: String
+}
