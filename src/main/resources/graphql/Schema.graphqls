@@ -1,6 +1,7 @@
 type Query {
     getAllUsers: [UserResponse!]!
     getUserById(id: ID!): UserResponse
+    skills: [Skill!]!
 }
 
 type UserResponse {
@@ -14,4 +15,19 @@ type UserResponse {
     linkedinUrl: String
     createdAt: String
     updatedAt: String
+}
+
+type Skill {
+  id: ID!
+  name: String!
+  category: String!
+  createdAt: String
+  deleted: Boolean
+}
+
+enum SkillCategory {
+  Frontend
+  Backend
+  Database
+  Other
 }
