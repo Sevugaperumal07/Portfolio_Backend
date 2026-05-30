@@ -44,7 +44,6 @@ target/
 Thumbs.db
 
 # Application secrets
-src/main/resources/application.properties
 src/main/resources/application.yml
 
 # Environment files
